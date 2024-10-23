@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.skillImage {
+  max-width: 100%;
+  opacity: 0; 
+  transform: translateX(100%);
+  transition: all 1s ease-out;
+}
+
+.animate .skillImage {
+  opacity: 1; 
+  transform: translateX(0); 
+}
+
+/* Media Queries */
+
+/* For large devices (desktops and large tablets) */
+@media (min-width: 1200px) {
+  .container {
+    height: 100vh;
+  }
+  .skillImage {
+    max-width: 80%; /* Reduce the max width on larger screens */
+  }
+}
+
+/* For medium devices (tablets) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .skillImage {
+    max-width: 90%; /* Increase the max width for medium screens */
+    transition: all 1s ease-in-out; /* Adjust the transition for a smoother effect */
+  }
+}
+
+/* For small devices (mobile phones) */
+@media (max-width: 480px) {
+  .container {
+    height: 80vh;
+  }
+  .skillImage {
+    max-width: 100%; /* Make sure the image occupies full width */
+    transform: translateX(50%); /* Adjust initial translation for smaller screens */
+  }
+}

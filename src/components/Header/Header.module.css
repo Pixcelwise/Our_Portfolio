@@ -1,0 +1,79 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(17, 7, 31);
+}
+
+.logo {
+    font-family: 'Edo', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    left: 15%;
+}
+
+.navbar {
+    display: flex;
+    gap: 70px;
+    position: relative;
+    right: 15%;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navLink:hover {
+    text-shadow: 0 0 10px rgba(238, 248, 224, 0.7), 0 0 20px rgba(238, 248, 224, 0.5); 
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 1.3rem; /* Adjust logo size for medium screens */
+        left: 10%; /* Adjust position */
+    }
+
+    .navbar {
+        gap: 50px; /* Reduce gap between nav links */
+        right: 10%; /* Adjust position */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack logo and navbar vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Further reduce logo size */
+        left: 0; /* Remove position adjustment */
+        margin-bottom: 10px; /* Add spacing below logo */
+    }
+
+    .navbar {
+        gap: 30px; /* Reduce gap for smaller screens */
+        right: 0; /* Remove position adjustment */
+    }
+
+    .navLink {
+        font-size: 0.9rem; /* Reduce nav link size */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem; /* Reduce logo size for mobile */
+    }
+
+    .navLink {
+        font-size: 0.8rem; /* Further reduce nav link size */
+    }
+}
+

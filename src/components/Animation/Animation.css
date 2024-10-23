@@ -1,0 +1,41 @@
+/* Container for the code */
+.code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    height: 80px;
+    background-color: rgb(17, 7, 31);
+    padding: 20px;
+}
+
+/* Style the code block */
+.code-snippet {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #d5d5d5;
+    white-space: pre-wrap;
+    background-color: #1c1f24;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px #4b0078;
+    /* border: 1px solid #06000a; */
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Typing cursor animation */
+.cursor {
+    font-weight: bold;
+    color: #61dafb;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,249 @@
+/* Contact.module.css */
+
+.card {
+    background-color:rgb(17, 7, 31); /* Dark purple background */
+    border-radius: 15px;
+    /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);  */
+    padding: 25px;
+    max-width: 600px;
+    margin: 10% auto;
+    font-family: 'Comic Sans MS', sans-serif; /* Fun, casual font */
+    /* border: 2px solid #9a00ff; 
+}
+
+.header {
+    border-bottom: 2px solid #00ffea; /* Glowing cyan divider */
+    padding-bottom: 12px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dac9da; /* Neon magenta for the title */
+    text-align: center;
+    text-shadow: 0 0 5px #220922, 0 0 10px #350535; /* Glowing effect */
+}
+
+.commentSection {
+    margin-top: 20px;
+}
+
+.commentBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.commentReaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.likeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.likeButton:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+.likeCount {
+    font-size: 1rem;
+    color: #00ffea; /* Glowing cyan color for likes */
+    margin-top: 8px;
+    text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+}
+
+.commentDetails {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #3b005e; /* Slightly lighter dark purple */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    color: #e6e6e6; /* Light gray text for readability */
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #f1edf1; /* Neon magenta avatar */
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 0 8px #ff00ff; /* Glowing avatar effect */
+}
+
+.userName {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #e6e6e6;
+}
+
+.timestamp {
+    font-size: 0.85rem;
+    color: #cccccc; /* Slightly darker gray for timestamp */
+}
+
+.commentText {
+    font-size: 1rem;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+.replySection {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #00ffea;
+    padding-top: 12px;
+    margin-top: 15px;
+}
+
+.replyBox {
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #9a00ff;
+    font-size: 1rem;
+    background-color: #3b005e;
+    color: #e6e6e6;
+    resize: none;
+    margin-right: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.replyBox:focus {
+    background-color: #4b0078; /* Darker purple on focus */
+    outline: none;
+}
+
+.replyButtons {
+    display: flex;
+    align-items: center;
+}
+
+.replyButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #389189; /* Neon cyan for reply buttons */
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.replyButton:hover {
+    color: #ff00ff; /* Switch to magenta on hover */
+}
+
+.sendButton {
+    background-color: #14c8b9;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 8px #00ffea; /* Neon glow for send button */
+}
+
+.sendButton:hover {
+    background-color: #2873ff; /* Glowing magenta on hover */
+    transform: rotate(360deg); /* Fun spin effect */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .commentBox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .commentDetails {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .replyBox {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .sendButton {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .commentBox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .userName {
+        font-size: 0.9rem;
+    }
+
+    .timestamp {
+        font-size: 0.75rem;
+    }
+
+    .commentText {
+        font-size: 0.85rem;
+    }
+
+    .replyBox {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .replyButton {
+        font-size: 1.2rem;
+    }
+
+    .sendButton {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
