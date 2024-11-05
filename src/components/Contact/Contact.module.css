@@ -120,6 +120,7 @@
     resize: none;
     margin-right: 12px;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .replyBox:focus {
@@ -188,6 +189,7 @@
     }
 
     .replyBox {
+        width: 100%;
         font-size: 0.95rem;
         padding: 10px;
     }
@@ -234,6 +236,7 @@
     .replyBox {
         font-size: 0.9rem;
         padding: 8px;
+        width: 100%;
     }
 
     .replyButton {
