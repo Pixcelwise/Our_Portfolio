@@ -36,6 +36,13 @@ function Header() {
                 >
                     Contact
                 </a>
+                <a
+                    href="/Wallpaper"
+                    className={styles.navLink}
+                    
+                >
+                    Wallpapers
+                </a>
             </nav>
         </header>
     );

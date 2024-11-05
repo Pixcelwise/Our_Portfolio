@@ -8,14 +8,14 @@
 
 .skillImage {
   max-width: 100%;
-  opacity: 0; 
+  opacity: 0;
   transform: translateX(100%);
   transition: all 1s ease-out;
 }
 
 .animate .skillImage {
-  opacity: 1; 
-  transform: translateX(0); 
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Media Queries */
@@ -25,8 +25,10 @@
   .container {
     height: 100vh;
   }
+
   .skillImage {
-    max-width: 80%; /* Reduce the max width on larger screens */
+    max-width: 80%;
+    /* Reduce the max width on larger screens */
   }
 }
 
@@ -36,9 +38,12 @@
     flex-direction: column;
     height: 100vh;
   }
+
   .skillImage {
-    max-width: 90%; /* Increase the max width for medium screens */
-    transition: all 1s ease-in-out; /* Adjust the transition for a smoother effect */
+    max-width: 90%;
+    /* Increase the max width for medium screens */
+    transition: all 1s ease-in-out;
+    /* Adjust the transition for a smoother effect */
   }
 }
 
@@ -47,8 +52,11 @@
   .container {
     height: 80vh;
   }
+
   .skillImage {
-    max-width: 100%; /* Make sure the image occupies full width */
-    transform: translateX(50%); /* Adjust initial translation for smaller screens */
+    max-width: 100%;
+    /* Make sure the image occupies full width */
+    transform: translateX(50%);
+    /* Adjust initial translation for smaller screens */
   }
 }
