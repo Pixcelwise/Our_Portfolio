@@ -1,21 +1,48 @@
 .Top_Banner_Container {
     height: 100vh;
     width: 100vw;
-    border: 1px solid black;
+    position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.Top_Banner_Container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .img_container {
-    height: 100%;
+    display: flex;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .Top_Banner_img {
-    overflow: hidden;
+    width: 33.33%;
     height: 100%;
+    position: relative;
+}
+
+.Top_Banner_img p {
+    position: absolute;
+    bottom: 20px;
     width: 100%;
-    object-fit: fill;
+    text-align: center;
+    color: white;
+    font-size: 16px;
 }
