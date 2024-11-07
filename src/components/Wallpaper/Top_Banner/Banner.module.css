@@ -1,3 +1,4 @@
+/* Banner.module.css */
 .Top_Banner_Container {
     height: 100vh;
     width: 100vw;
@@ -6,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     overflow: hidden;
     font-family: Arial, sans-serif;
 }
@@ -58,10 +58,34 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     max-width: 80%;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Align text to the left and icon to the right */
+    align-items: center; /* Vertically align text and icon */
+    text-align: left; /* Ensure the text aligns left */
+    width: 100%; /* Ensures full width is used for the flex container */
+    padding-right: 10px; /* Adds space from the right edge */
+}
+
+.arrowIcon {
+    margin-left: 15px; /* Adds some space between text and icon */
+    font-size: 30px; /* Set the size of the icon */
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Show pointer cursor to indicate it's clickable */
+}
+
+.arrowIcon:hover {
+    transform: translateX(5px); /* Adds a subtle "move" effect on hover */
 }
 
 .column:hover img {

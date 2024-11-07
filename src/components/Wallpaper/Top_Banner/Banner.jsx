@@ -2,7 +2,12 @@ import Navbar from '../Navbar/Navbar';
 import styles from './Banner.module.css';
 import img1 from '/Top_Banner/Top_image_1.svg';
 import img2 from '/Top_Banner/Top_image_2.svg';
-import img3 from '/Top_Banner/Top_image_3.svg';
+import Wall3 from '/Wall3.jpg';
+import Wall2 from '/Wall2.jpg';
+import Wall1 from '/Wall1.jpg';
+
+// Importing React Icons
+import { FaArrowRight } from 'react-icons/fa'; // Right arrow icon from React Icons
 
 function Banner() {
     return (
@@ -13,16 +18,25 @@ function Banner() {
             </div>
             <div className={styles.columns}>
                 <div className={styles.column}>
-                    <img src={img1} className={styles.image} alt="Inca Trail, Peru" />
-                    <p>Why you should reconsider The Inca Trail, Peru Trip</p>
+                    <img src={Wall3} className={styles.image} alt="Inca Trail, Peru" />
+                    <p>
+                        Art beyond boundaries, for your screen.
+                        <FaArrowRight className={styles.arrowIcon} />
+                    </p>
                 </div>
                 <div className={styles.column}>
-                    <img src={img2} className={styles.image} alt="Northern Lights, Iceland" />
-                    <p>The Hidden Powers of The Northern Lights, Iceland</p>
+                    <img src={Wall1} className={styles.image} alt="Northern Lights, Iceland" />
+                    <p>
+                        Breathe in the beauty of nature, one wallpaper at a time.
+                        <FaArrowRight className={styles.arrowIcon} />
+                    </p>
                 </div>
                 <div className={styles.column}>
-                    <img src={img3} className={styles.image} alt="Blue Hole, Belize" />
-                    <p>10 Facts you didn’t know about The Blue Hole, Belize</p>
+                    <img src={Wall2} className={styles.image} alt="Blue Hole, Belize" />
+                    <p>
+                        The city never sleeps—now, neither does your screen.
+                        <FaArrowRight className={styles.arrowIcon} />
+                    </p>
                 </div>
             </div>
         </section>

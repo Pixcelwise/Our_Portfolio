@@ -1,70 +1,64 @@
+/* Navbar.module.css */
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
-    background: transparent;
+    align-items: center;
+    padding: 20px 40px;
+    background-color:transparent;  
     position: absolute;
     top: 0;
-    width: 100%;
-    z-index: 3; 
-    
+    width: 80%;
+    z-index: 100;
 }
 
 .logo img {
-    height: 150px; 
-    width: auto; 
+    height: 200px;  /* Large logo */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Subtle zoom effect on hover for the logo */
 }
 
 .navLinks {
-    display: flex;
     list-style: none;
-    gap: 40px; 
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.navLinks li a {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 500;
+.navLinks li {
+    margin-left: 30px;  /* Space between the links */
+}
+
+.navLinks a {
     text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.navLinks li a:hover {
-    color: #88e1f2; 
+.navLinks a:hover {
+    color: #ff6347; /* Highlight color for links on hover */
 }
 
-.authButtons {
-    display: flex;
-    gap: 20px; 
-}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
 
-.signUp, .login {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+    .navLinks {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.signUp {
-    background-color: white;
-    color: black;
-}
-
-.signUp:hover {
-    background-color: #f0f0f0; 
-}
-
-.login {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-}
-
-.login:hover {
-    background-color: white;
-    color: black;
+    .navLinks li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
 }
