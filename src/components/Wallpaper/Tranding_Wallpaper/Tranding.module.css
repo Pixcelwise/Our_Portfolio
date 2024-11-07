@@ -1,19 +1,27 @@
 /* Trending Wallpapers Section */
 .trendingWallpapers {
-    padding: 40px 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Ensure content flows vertically */
+    justify-content: center;  /* Vertically center content */
+    align-items: center;      /* Horizontally center content */
+    height: 100vh;            /* Make the section take up the full viewport height */
+    padding: 0 20px;          /* Padding left and right */
+    background-size: cover;  /* Ensure background image covers entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
 .trendingWallpapers h3 {
-    font-size: 2em;
+    font-size: 2.5em;         /* Increase font size for better readability */
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;              /* White text color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text legibility */
 }
 
 /* Carousel container */
 .wallpaperCarousel {
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 90%;            /* Limit the width of the carousel */
+    margin: 0 auto;           /* Center the carousel */
 }
 
 /* Each wallpaper item */
@@ -26,14 +34,14 @@
 }
 
 .wallpaperItem:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
+    transform: scale(1.05);  /* Slightly scale up on hover */
 }
 
 /* Wallpaper image */
 .wallpaperItem img {
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
+    width: 100%;              /* Make images full width inside their container */
+    height: auto;             /* Maintain aspect ratio */
+    border-radius: 10px;      /* Rounded corners for images */
     display: block;
     margin: 0 auto;
 }
@@ -58,14 +66,13 @@
     background-color: #ff5722;
 }
 
-
 @media (max-width: 768px) {
     .trendingWallpapers h3 {
-        font-size: 1.5em;
+        font-size: 1.8em;  /* Slightly smaller font size on smaller screens */
     }
 
     .wallpaperItem img {
-        width: 100%; /* Make images full width on smaller screens */
+        width: 100%;  /* Make images full width on smaller screens */
     }
 
     .wallpaperItem button {

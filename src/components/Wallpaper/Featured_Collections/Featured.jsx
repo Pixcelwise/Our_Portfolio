@@ -1,29 +1,35 @@
+import styles from "./Featured.module.css";
+import Background from "/Background2.png"; 
+import image_1 from "/Tranding_images/image_1.svg"
+import image_2 from "/Tranding_images/image_2.svg"
+import image_3 from "/Tranding_images/image_3.svg"
 
-import styles from "./Featured.module.css"
 function Featured() {
     return (
-        <section className={styles.featuredCollections}>
-            {/* Featured Collections */}
-            <h3>Featured Collections</h3>
+        <section
+            className={styles.featuredCollections}
+            style={{ backgroundImage: `url(${Background})` }} // Apply background image
+        >
+            {/* <h3>Featured Collections</h3>
             <div className={styles.collectionGrid}>
-                {/* Example categories */}
+               
                 <div className={styles.collectionItem}>
-                    <img src="" alt="Nature" />
+                    <img src={image_1} alt="Nature" />
                     <p>Nature</p>
                 </div>
 
                 <div className={styles.collectionItem}>
-                    <img src="" alt="Abstract" />
+                    <img src={image_2} alt="Abstract" />
                     <p>Abstract</p>
                 </div>
 
                 <div className={styles.collectionItem}>
-                    <img src="" alt="CityScapes" />
+                    <img src={image_3} alt="CityScapes" />
                     <p>CityScapes</p>
                 </div>
-            </div>
+            </div> */}
         </section>
-    )
+    );
 }
 
-export default Featured
+export default Featured;

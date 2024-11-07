@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import image_1 from "/Tranding_images/image_1.svg"
 import image_2 from "/Tranding_images/image_2.svg"
 import image_3 from "/Tranding_images/image_3.svg"
+import Background from '/Background3.png'
 function Tranding() {
     const settings = {
         dots: true,
@@ -26,7 +27,7 @@ function Tranding() {
                 settings: {
                     slidesToShow: 1,
                 },
-            },
+            },5
         ],
     };
 
@@ -36,7 +37,10 @@ function Tranding() {
         image_3,
     ];
     return (
-        <section className={styles.trendingWallpapers}>
+        <section
+            className={styles.trendingWallpapers}
+            style={{ backgroundImage: `url(${Background})` }}
+        >
             <h3>Trending Wallpapers</h3>
             <Slider {...settings} className={styles.wallpaperCarousel}>
                 {trendingImages.map((image, index) => (
@@ -47,6 +51,7 @@ function Tranding() {
                 ))}
             </Slider>
         </section>
+
     )
 }
 

@@ -1,45 +1,83 @@
-/* Featured Collections */
+/* Featured Collections Section */
 .featuredCollections {
+    display: flex;                         
+    flex-direction: column;                 
+    justify-content: center;                
+    align-items: center;                    
     padding: 60px 20px;
     text-align: center;
     background-color: #f4f4f9;
     color: #333;
+    height: 50vh;                         
+    background-size: cover;                 
+    background-position: center center;     
+    background-repeat: no-repeat;           
+    background-attachment: fixed;          
 }
 
+/* Featured Collections Title */
 .featuredCollections h3 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #222;
+    color: #edebeb;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
 }
 
+/* Collection Grid Layout */
 .collectionGrid {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;  
 }
 
+/* Collection Item Style */
 .collectionItem {
     width: 200px;
     text-align: center;
+    background-color: transparent;
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Image inside each collection item */
 .collectionItem img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
+/* Text inside each collection item */
 .collectionItem p {
     margin-top: 15px;
     font-size: 1.1em;
-    color: #666;
+    color: #d3d2d2;
 }
 
+/* Hover effects on each collection item */
 .collectionItem:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .featuredCollections h3 {
+        font-size: 2em; 
+    }
+
+    .collectionGrid {
+        gap: 15px; 
+    }
+
+    .collectionItem {
+        width: 150px; 
+    }
+
+    .collectionItem p {
+        font-size: 1em; 
+    }
 }
