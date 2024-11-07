@@ -16,7 +16,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <div className={styles.Container} >
+            <div className={styles.Container} style={{ backgroundImage: `url(${Background})` }}>
                 {/* Hero Section with Background Image */ }
                 < Banner />
 

@@ -6,13 +6,13 @@
     align-items: center;
     padding: 60px 20px;
     text-align: center;
-    background-color: #f4f4f9;
+    /* background-color: #f4f4f9; */
     color: #333;
     height: 50vh;
-    background-size: cover;
+    /* background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 /* Featured Collections Title */

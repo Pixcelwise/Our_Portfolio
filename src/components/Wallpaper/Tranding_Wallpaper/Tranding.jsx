@@ -38,7 +38,7 @@ function Tranding() {
     ];
     return (
         <section
-            className={styles.trendingWallpapers} style={{ backgroundImage: `url(${Background})` }}>
+            className={styles.trendingWallpapers} >
             <h3>Trending Wallpapers</h3>
             <Slider {...settings} className={styles.wallpaperCarousel}>
                 {trendingImages.map((image, index) => (

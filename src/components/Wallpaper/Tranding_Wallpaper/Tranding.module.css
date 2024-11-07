@@ -17,11 +17,11 @@
     /* Center the background image */
     background-repeat: no-repeat;
     /* Prevent background image from repeating */
-    background: white;
+    /* background: white;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .trendingWallpapers h3 {

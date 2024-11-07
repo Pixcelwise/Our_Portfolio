@@ -6,4 +6,9 @@
     width: 100vw;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
