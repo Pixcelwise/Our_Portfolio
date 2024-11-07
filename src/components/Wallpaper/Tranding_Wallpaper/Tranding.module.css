@@ -1,27 +1,45 @@
 /* Trending Wallpapers Section */
 .trendingWallpapers {
     display: flex;
-    flex-direction: column;  /* Ensure content flows vertically */
-    justify-content: center;  /* Vertically center content */
-    align-items: center;      /* Horizontally center content */
-    height: 100vh;            /* Make the section take up the full viewport height */
-    padding: 0 20px;          /* Padding left and right */
-    background-size: cover;  /* Ensure background image covers entire section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
+    flex-direction: column;
+    /* Ensure content flows vertically */
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* Horizontally center content */
+    height: 100vh;
+    /* Make the section take up the full viewport height */
+    padding: 0 20px;
+    /* Padding left and right */
+    background-size: cover;
+    /* Ensure background image covers entire section */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
+    background: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .trendingWallpapers h3 {
-    font-size: 2.5em;         /* Increase font size for better readability */
+    font-size: 2.5em;
+    /* Increase font size for better readability */
     margin-bottom: 20px;
-    color: #fff;              /* White text color for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text legibility */
+    color: #fff;
+    /* White text color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for text legibility */
 }
 
 /* Carousel container */
 .wallpaperCarousel {
-    max-width: 90%;            /* Limit the width of the carousel */
-    margin: 0 auto;           /* Center the carousel */
+    max-width: 90%;
+    /* Limit the width of the carousel */
+    margin: 0 auto;
+    /* Center the carousel */
 }
 
 /* Each wallpaper item */
@@ -34,14 +52,18 @@
 }
 
 .wallpaperItem:hover {
-    transform: scale(1.05);  /* Slightly scale up on hover */
+    transform: scale(1.05);
+    /* Slightly scale up on hover */
 }
 
 /* Wallpaper image */
 .wallpaperItem img {
-    width: 100%;              /* Make images full width inside their container */
-    height: auto;             /* Maintain aspect ratio */
-    border-radius: 10px;      /* Rounded corners for images */
+    width: 100%;
+    /* Make images full width inside their container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Rounded corners for images */
     display: block;
     margin: 0 auto;
 }
@@ -68,11 +90,13 @@
 
 @media (max-width: 768px) {
     .trendingWallpapers h3 {
-        font-size: 1.8em;  /* Slightly smaller font size on smaller screens */
+        font-size: 1.8em;
+        /* Slightly smaller font size on smaller screens */
     }
 
     .wallpaperItem img {
-        width: 100%;  /* Make images full width on smaller screens */
+        width: 100%;
+        /* Make images full width on smaller screens */
     }
 
     .wallpaperItem button {

@@ -9,27 +9,28 @@ import Tranding from '../components/Wallpaper/Tranding_Wallpaper/Tranding';
 import Customize from '../components/Wallpaper/Customize_request/Customize';
 import Banner from '../components/Wallpaper/Top_Banner/Banner';
 
+import Background from "/Background4.png";
 
 const LandingPage = () => {
 
 
     return (
         <>
-            <div className={styles.Container}>
-                {/* Hero Section with Background Image */}
-                <Banner />
+            <div className={styles.Container} >
+                {/* Hero Section with Background Image */ }
+                < Banner />
 
-                {/* Featured Wallpapers */}
-                <Featured />
+                {/* Featured Wallpapers */ }
+                < Featured />
 
-                {/* Trending Wallpapers */}
-                <Tranding />
+                {/* Trending Wallpapers */ }
+                < Tranding />
 
-                {/*Customize request */}
-                <Customize />
+                {/*Customize request */ }
+                < Customize />
 
                 <Footer />
-            </div>
+            </div >
         </>
 
     );
