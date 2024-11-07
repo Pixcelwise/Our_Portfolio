@@ -1,0 +1,52 @@
+/* Newsletter Signup */
+.newsletter {
+    padding: 60px 20px;
+    background-color: #444;
+    color: #ffffff;
+    text-align: center;
+}
+
+.newsletter h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.newsletterForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletterForm input[type="email"] {
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 30px;
+    border: 1px solid #ff7b54;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletterForm input[type="text"] {
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 30px;
+    border: 1px solid #ff7b54;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletterForm button {
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #ff7b54;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletterForm button:hover {
+    background-color: #ff5722;
+}

@@ -1,11 +1,11 @@
 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Projects from '../components/Projects/Projects'
-import Heading from '../components/Heading/Heading'
-import Headline from '../components/Headline/Headline'
-import ContactForm from '../components/Contact/Contact'
-import Skills from '../components/Skills/Skills'
+import Projects from '../components/Portfolio/Projects/Projects'
+import Heading from '../components/Portfolio/Heading/Heading'
+import Headline from '../components/Portfolio/Headline/Headline'
+import ContactForm from '../components/Portfolio/Contact/Contact'
+import Skills from '../components/Portfolio/Skills/Skills'
 import pictify from '/picctify.png'
 import tastytales from '/tastytales.png';
 import KickingAnimation from '../components/Animation/Animation'
