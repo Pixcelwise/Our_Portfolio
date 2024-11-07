@@ -3,7 +3,7 @@ import styles from './Wallpaper.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Footer from '../components/Footer/Footer'
+import Footer from '../components/Wallpaper/Footer/Footer'
 import Featured from '../components/Wallpaper/Featured_Collections/Featured';
 import Tranding from '../components/Wallpaper/Tranding_Wallpaper/Tranding';
 import Customize from '../components/Wallpaper/Customize_request/Customize';
