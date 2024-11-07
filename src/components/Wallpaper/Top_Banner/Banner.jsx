@@ -4,7 +4,7 @@ import img1 from '/Top_Banner/Top_image_1.svg';
 import img2 from '/Top_Banner/Top_image_2.svg';
 import Wall3 from '/Wall3.jpg';
 import Wall2 from '/Wall2.jpg';
-import Wall1 from '/Wall1.jpg';
+import Wall4 from '/Wall4.jpg';
 
 // Importing React Icons
 import { FaArrowRight } from 'react-icons/fa'; // Right arrow icon from React Icons
@@ -25,7 +25,7 @@ function Banner() {
                     </p>
                 </div>
                 <div className={styles.column}>
-                    <img src={Wall1} className={styles.image} alt="Northern Lights, Iceland" />
+                    <img src={Wall4} className={styles.image} alt="Northern Lights, Iceland" />
                     <p>
                         Breathe in the beauty of nature, one wallpaper at a time.
                         <FaArrowRight className={styles.arrowIcon} />

@@ -1,5 +1,5 @@
 import styles from "./Featured.module.css";
-import Background from "/Background2.png"; 
+import Background from "/Background4.png"; 
 import image_1 from "/Tranding_images/image_1.svg"
 import image_2 from "/Tranding_images/image_2.svg"
 import image_3 from "/Tranding_images/image_3.svg"
