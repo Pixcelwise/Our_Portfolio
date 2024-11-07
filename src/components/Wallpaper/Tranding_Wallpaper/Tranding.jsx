@@ -2,8 +2,9 @@ import styles from "./Tranding.module.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-
-import heroBackground from '/Background2.png'
+import image_1 from "/Tranding_images/image_1.svg"
+import image_2 from "/Tranding_images/image_2.svg"
+import image_3 from "/Tranding_images/image_3.svg"
 function Tranding() {
     const settings = {
         dots: true,
@@ -30,9 +31,9 @@ function Tranding() {
     };
 
     const trendingImages = [
-        heroBackground,
-        heroBackground,
-        heroBackground
+        image_1,
+        image_2,
+        image_3,
     ];
     return (
         <section className={styles.trendingWallpapers}>

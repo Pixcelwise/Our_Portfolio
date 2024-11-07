@@ -1,104 +1,21 @@
-/* Hero Section */
-.hero {
-    background-size: cover;
-    background-position: center;
+.Top_Banner_Container {
     height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
-    width: 100%;
+.img_container {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 
-h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin: 0;
-}
-
-h2 {
-    font-size: 1.3em;
-    font-weight: 300;
-    margin: 10px 0 30px;
-    max-width: 600px;
-}
-
-/* Search Bar */
-.searchBar {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
-
-.searchBar input {
-    padding: 12px;
-    font-size: 1em;
-    border-radius: 30px;
-    border: 1px solid #4caf50;
-    width: 220px;
-}
-
-.searchBar button {
-    padding: 12px 20px;
-    font-size: 1em;
-    background-color: #4caf50;
-    border: none;
-    border-radius: 30px;
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.searchBar button:hover {
-    background-color: #388e3c;
-    transform: translateY(-3px);
-}
-
-/* Hero Buttons */
-.heroButtons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.heroButtons button {
-    padding: 10px 25px;
-    font-size: 1em;
-    border-radius: 30px;
-    border: 1px solid transparent;
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.exploreButton {
-    background-color: #ff7b54;
-}
-
-.exploreButton:hover {
-    background-color: #ff5722;
-    transform: translateY(-3px);
-}
-
-.popularButton {
-    background-color: #2196f3;
-}
-
-.popularButton:hover {
-    background-color: #1976d2;
-    transform: translateY(-3px);
+.Top_Banner_img {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }

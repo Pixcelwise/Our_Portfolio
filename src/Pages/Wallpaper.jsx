@@ -1,6 +1,5 @@
 
 import styles from './Wallpaper.module.css';
-import heroBackground from '/Background2.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,7 +15,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <div className={styles.container}>
+            <div className={styles.Container}>
                 {/* Hero Section with Background Image */}
                 <Banner />
 

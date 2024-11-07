@@ -1,20 +1,22 @@
+import Navbar from '../Navbar/Navbar'
 import styles from './Banner.module.css'
-import heroBackground from '/Background2.png'
+import img1 from "/Top_Banner/Top_image_1.svg"
+import img2 from "/Top_Banner/Top_image_2.svg"
+import img3 from "/Top_Banner/Top_image_3.svg"
 function Banner() {
     return (
-        <section className={styles.hero} style={{ backgroundImage: `url(${heroBackground})` }}>
-            <div className={styles.overlay}>
-                <h1>Your Source for Stunning Wallpapers</h1>
-                <h2>Download High-Quality, Free Wallpapers for Any Screen</h2>
-                <div className={styles.searchBar}>
-                    <input type="text" placeholder="Search wallpapers..." aria-label="Search wallpapers" />
-                    <button>Search</button>
-                </div>
-                <div className={styles.heroButtons}>
-                    <button className={styles.exploreButton}>Explore Wallpapers</button>
-                    <button className={styles.popularButton}>Popular Downloads</button>
-                </div>
+        <section className={styles.Top_Banner_Container} >
+            <Navbar />
+            <div className={styles.img_container}>
+                <img src={img1} className={styles.Top_Banner_img} alt="top_banner_img" />
             </div>
+            <div className={styles.img_container}>
+                <img src={img2} className={styles.Top_Banner_img} alt="top_banner_img" />
+            </div>
+            <div className={styles.img_container}>
+                <img src={img3} className={styles.Top_Banner_img} alt="top_banner_img" />
+            </div>
+
         </section>
     )
 }

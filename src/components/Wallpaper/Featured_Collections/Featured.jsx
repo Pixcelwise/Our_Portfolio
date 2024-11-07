@@ -1,4 +1,4 @@
-import heroBackground from '/Background2.png'
+
 import styles from "./Featured.module.css"
 function Featured() {
     return (
@@ -8,11 +8,11 @@ function Featured() {
             <div className={styles.collectionGrid}>
                 {/* Example categories */}
                 <div className={styles.collectionItem}>
-                    <img src={heroBackground} alt="Nature" />
+                    <img src="" alt="Nature" />
                     <p>Nature</p>
                 </div>
                 <div className={styles.collectionItem}>
-                    <img src={heroBackground} alt="Abstract" />
+                    <img src="" alt="Abstract" />
                     <p>Abstract</p>
                 </div>
             </div>
